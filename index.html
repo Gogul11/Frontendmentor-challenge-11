@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age calculator</title>
+
+        <link rel="stylesheet" href="age.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="age-calculator-app-main\assets\images\favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="main">
+            <div id="cal">
+                <div id="input">
+                    <div id="in-1">
+                        <p id="head" class="h1">DAY</p>
+                        <input type="text" name="day" id="day" class="day" maxlength="2" value="0">
+                        <p id="error1" class="er1">Must be a valid day</p>
+                        <p id="error2" class="er2">This field is required</p>
+                    </div>
+                    
+                    <div id="in-2">
+                        <p id="head" class="h2">MONTH</p>
+                        <input type="text" name="month" id="month" maxlength="2" value="0">
+                        <p id="error1" class="er3">Must be a valid month</p>
+                        <p id="error2" class="er4">This field is required</p>
+
+                    </div>
+                    
+                    <div id="in-3">
+                        <p id="head" class="h3">YEAR</p>
+                        <input type="text" name="year" id="year" maxlength="4" value="0">
+                        <p id="error1" class="er5">Must be in the past</p>
+                        <p id="error2" class="er6">This field is required</p>
+                    </div>
+                </div>
+
+                <div id="button">
+                    <hr style="color: hsl(0, 0%, 86%);">
+                    <button type="button" onclick="age()"><img src="icon-arrow.svg" alt="button"></button>
+                </div>
+            </div>
+
+            <div id="display">
+                <p id="years"><span id="syear">_ _</span>years</p>
+                <p id="months"><span id="smonth">_ _</span>months</p>
+                <p id="days"><span id="sday">_ _</span>days</p>
+            </div>
+        </div>
+
+        <script src="age.js"></script>
+    </body>
+</html>
